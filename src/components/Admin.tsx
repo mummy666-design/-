@@ -454,6 +454,35 @@ export default function Admin({
                           </div>
                         ))}
                       </div>
+
+                      {/* GitHub Sync Information and Exporter */}
+                      <div className="mt-8 p-4 bg-[#141414] border border-amber-950/40 text-amber-200/90 rounded space-y-3">
+                        <div className="flex items-start space-x-2.5">
+                          <AlertCircle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5" />
+                          <div className="space-y-1">
+                            <h4 className="text-xs font-mono tracking-widest font-bold text-white uppercase">
+                              💡 GITHUB 영구 동기화 안내
+                            </h4>
+                            <p className="text-[11px] text-white/60 leading-relaxed font-sans select-text">
+                              어드민 페이지에서 추가/수정한 내용은 브라우저의 <strong>로컬 스토리지(LocalStorage)</strong>에 임시 저장되어 현재 프리뷰에서만 보입니다.<br />
+                              이 수정한 내용을 GitHub 소스 코드에 영구 보존하려면, 아래 <strong>[동기화용 데이터 복사]</strong> 버튼을 누르신 후, AI 채팅창에 복사한 값을 그대로 붙여넣고 <strong>"이 데이터로 src/data.ts를 영구 업데이트해줘"</strong>라고 말씀해 주세요! AI가 즉시 소스 파일에 반영하여 저장해 드립니다.
+                            </p>
+                          </div>
+                        </div>
+                        <div className="flex space-x-2 pt-1">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              const jsonString = JSON.stringify(projects, null, 2);
+                              navigator.clipboard.writeText(jsonString);
+                              alert('동기화 데이터가 클립보드에 성공적으로 복사되었습니다! 이제 AI 채팅창에 붙여넣어 "이 데이터로 src/data.ts를 업데이트해줘"라고 요청해 주세요.');
+                            }}
+                            className="bg-amber-500/10 hover:bg-amber-500/20 text-amber-400 border border-amber-500/30 px-3 py-1.5 text-[10px] font-mono tracking-widest uppercase transition-all cursor-pointer rounded flex items-center space-x-1.5"
+                          >
+                            <span>Copy Sync Data (동기화용 데이터 복사)</span>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                   ) : (
                     /* PROJECT FORM WORKSPACE: ADD OR EDIT */
