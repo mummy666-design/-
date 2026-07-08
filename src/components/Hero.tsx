@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowDown } from 'lucide-react';
+// @ts-ignore
+import heroBg from '../assets/images/spatial_hero_widescreen_1783500207050.jpg';
 
 interface HeroProps {
   onScrollToProjects: () => void;
@@ -12,9 +14,9 @@ export default function Hero({ onScrollToProjects }: HeroProps) {
       {/* Background Image with Vignette Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=90"
-          alt="1MM Design Spatial Hero"
-          className="w-full h-full object-cover opacity-50 scale-105 filter brightness-95"
+          src={heroBg}
+          alt="OneMillimeter Spatial Hero"
+          className="w-full h-full object-cover opacity-60 scale-105 filter brightness-95"
           referrerPolicy="no-referrer"
         />
         {/* Rich Radial Gradient overlay for high-end cinematic feel */}

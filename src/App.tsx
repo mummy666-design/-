@@ -15,7 +15,7 @@ import Contact from './components/Contact';
 import Admin from './components/Admin';
 import Renewal from './components/Renewal';
 import { motion, AnimatePresence } from 'motion/react';
-import { ArrowUp, Github } from 'lucide-react';
+import { ArrowUp, Github, Shield } from 'lucide-react';
 
 export default function App() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -319,17 +319,26 @@ export default function App() {
               <span>COPYRIGHT © 2026 OneMillimeter.</span>
               <br />
               <span>ALL RIGHTS RESERVED IN CHRONICLE.</span>
-              {!isRenewalActive && (
+              <div className="flex flex-col space-y-1.5 mt-2">
                 <button
-                  onClick={() => {
-                    setIsRenewalActive(true);
-                    sessionStorage.removeItem('1mm_design_renewal_bypassed');
-                  }}
-                  className="block mt-2 text-[8px] tracking-[0.2em] text-amber-500/50 hover:text-amber-500 transition-colors uppercase font-mono cursor-pointer"
+                  onClick={() => setIsAdminOpen(true)}
+                  className="block text-[8px] tracking-[0.2em] text-white/25 hover:text-white/60 transition-colors uppercase font-mono cursor-pointer text-left"
+                  title="Admin Workspace Access"
                 >
-                  [ Activate Renewal Mode ]
+                  [ {isAdminLoggedIn ? 'ADMIN ACTIVE' : 'ADMIN PORTAL'} ]
                 </button>
-              )}
+                {!isRenewalActive && (
+                  <button
+                    onClick={() => {
+                      setIsRenewalActive(true);
+                      sessionStorage.removeItem('1mm_design_renewal_bypassed');
+                    }}
+                    className="block text-[8px] tracking-[0.2em] text-amber-500/50 hover:text-amber-500 transition-colors uppercase font-mono cursor-pointer text-left"
+                  >
+                    [ Activate Renewal Mode ]
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         </div>

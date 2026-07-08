@@ -394,7 +394,7 @@ export default function Admin({
                               />
                               <div>
                                 <span className="text-[9px] font-mono text-white/30 tracking-wider block uppercase">
-                                  {proj.category} / {proj.year}
+                                  {proj.category}
                                 </span>
                                 <h4 className="text-sm font-sans font-medium text-white">{proj.title}</h4>
                                 <p className="text-[10px] text-white/50">{proj.client}</p>
@@ -519,7 +519,6 @@ export default function Admin({
                           >
                             <option value="Exhibition">Exhibition (전시공간)</option>
                             <option value="Brand Experience">Brand Experience (브랜드 경험)</option>
-                            <option value="Commercial Space">Commercial Space (상업공간)</option>
                           </select>
                         </div>
                         <div className="space-y-1">

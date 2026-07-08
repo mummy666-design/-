@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   client: string;
   year: string;
-  category: 'Exhibition' | 'Brand Experience' | 'Commercial Space';
+  category: 'Exhibition' | 'Brand Experience';
   heroImage: string;
   summary: string; // 3 lines
   concept: string; // 5-10 lines

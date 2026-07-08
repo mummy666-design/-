@@ -112,14 +112,10 @@ export default function ProjectDetail({ project, allProjects, onClose, onSelectP
                     className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105 filter brightness-90 group-hover:brightness-100"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-2 left-2 bg-[#0A0A0A]/85 backdrop-blur-md px-1.5 py-0.5 text-[7px] tracking-widest font-mono text-white/70 border border-[#1A1A1A] uppercase">
-                    {p.category}
-                  </div>
                 </div>
                 <div className="space-y-0.5">
                   <div className="flex justify-between items-center text-[8px] font-mono text-white/40">
                     <span>{p.client}</span>
-                    <span>{p.year}</span>
                   </div>
                   <h4 className="text-xs font-serif font-light text-white/90 tracking-wide group-hover:text-white truncate">
                     {p.title}

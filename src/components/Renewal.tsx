@@ -56,15 +56,6 @@ export default function Renewal({ onSubmitInquiry, onEnterSite, onOpenAdmin }: R
           <span className="font-mono text-sm tracking-[0.4em] font-semibold text-white">OneMillimeter</span>
           <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse" />
         </div>
-        
-        <button
-          onClick={onOpenAdmin}
-          className="p-2 border border-white/5 hover:border-white/20 bg-white/[0.02] text-white/40 hover:text-white/80 transition-all rounded text-[10px] tracking-widest font-mono cursor-pointer flex items-center gap-1.5"
-          title="Admin Workspace Access"
-        >
-          <Shield className="w-3 h-3" />
-          <span>PORTAL</span>
-        </button>
       </header>
 
       {/* Main Container */}
@@ -253,9 +244,19 @@ export default function Renewal({ onSubmitInquiry, onEnterSite, onOpenAdmin }: R
 
       {/* Footer / Bypass entry */}
       <footer className="w-full max-w-7xl mx-auto px-6 md:px-12 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 border-t border-white/5 z-10 relative select-none">
-        <span className="text-[10px] font-mono tracking-widest text-white/30 uppercase">
-          COPYRIGHT © 2026 OneMillimeter. ALL RIGHTS RESERVED.
-        </span>
+        <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+          <span className="text-[10px] font-mono tracking-widest text-white/30 uppercase text-center sm:text-left">
+            COPYRIGHT © 2026 OneMillimeter. ALL RIGHTS RESERVED.
+          </span>
+          <button
+            onClick={onOpenAdmin}
+            className="text-[10px] font-mono tracking-widest text-white/20 hover:text-white/60 transition-all cursor-pointer flex items-center gap-1.5 border border-white/5 hover:border-white/20 px-2 py-0.5 rounded bg-white/[0.01]"
+            title="Admin Workspace Access"
+          >
+            <Shield className="w-2.5 h-2.5" />
+            <span>PORTAL</span>
+          </button>
+        </div>
         
         {/* Bypass link */}
         <button

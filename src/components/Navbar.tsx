@@ -77,22 +77,6 @@ export default function Navbar({ currentSection, onNavigate, onOpenAdmin, isAdmi
 
         {/* RIGHT SIDE ACTIONS */}
         <div className="flex items-center space-x-6">
-          {/* Admin toggle */}
-          <button
-            onClick={onOpenAdmin}
-            className={`flex items-center space-x-1 px-3 py-1.5 rounded border text-[10px] tracking-wider transition-all duration-300 focus:outline-none cursor-pointer ${
-              isAdminLoggedIn
-                ? 'border-white/30 text-white bg-white/10 hover:bg-white/20'
-                : 'border-white/10 text-white/40 hover:text-white hover:border-white/20'
-            }`}
-            title="Admin Dashboard"
-          >
-            <Shield className="w-3 h-3" />
-            <span className="hidden sm:inline font-mono">
-              {isAdminLoggedIn ? 'ADMIN ACTIVE' : 'ADMIN'}
-            </span>
-          </button>
-
           {/* Quick contact button */}
           <button
             onClick={() => onNavigate('contact')}

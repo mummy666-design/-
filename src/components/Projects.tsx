@@ -16,7 +16,6 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
     { id: 'ALL', label: 'ALL PROJECTS', desc: '전체 프로젝트' },
     { id: 'Exhibition', label: 'EXHIBITION', desc: '전시공간', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' },
     { id: 'Brand Experience', label: 'BRAND EXPERIENCE', desc: '브랜드 경험', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80' },
-    { id: 'Commercial Space', label: 'COMMERCIAL SPACE', desc: '상업공간', image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80' },
   ];
 
   const filteredProjects = activeCategory === 'ALL'
@@ -84,11 +83,6 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
                         referrerPolicy="no-referrer"
                       />
                       
-                      {/* Top luxury badge */}
-                      <div className="absolute top-4 left-4 z-10 flex items-center space-x-2 bg-[#0A0A0A]/85 backdrop-blur-md border border-[#1A1A1A] px-3 py-1 font-mono text-[8px] tracking-[0.25em] text-white/85 uppercase">
-                        <span>{project.category}</span>
-                      </div>
-
                       {/* Cover hover layer */}
                       <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                         <div className="flex items-center space-x-2 bg-white text-black px-4 py-2 text-[10px] tracking-widest font-mono font-semibold transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
@@ -102,7 +96,6 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
                     <div className="space-y-3 pt-2">
                       <div className="flex justify-between items-center text-[10px] tracking-widest font-mono text-white/40">
                         <span>{project.client}</span>
-                        <span>{project.year}</span>
                       </div>
                       
                       <div className="flex justify-between items-baseline group-hover:text-white/80 transition-colors">
