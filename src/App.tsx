@@ -13,12 +13,18 @@ import ProjectDetail from './components/ProjectDetail';
 import About from './components/About';
 import Contact from './components/Contact';
 import Admin from './components/Admin';
+import Renewal from './components/Renewal';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUp, Github } from 'lucide-react';
 
 export default function App() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [inquiries, setInquiries] = useState<Inquiry[]>([]);
+  
+  // Under Renewal state
+  const [isRenewalActive, setIsRenewalActive] = useState(() => {
+    return sessionStorage.getItem('1mm_design_renewal_bypassed') !== 'true';
+  });
   
   // Navigation states
   const [currentSection, setCurrentSection] = useState('home');
@@ -187,6 +193,36 @@ export default function App() {
     localStorage.setItem('1mm_design_inquiries', JSON.stringify(updated));
   };
 
+  if (isRenewalActive) {
+    return (
+      <div className="bg-[#060606] text-white min-h-screen">
+        <Renewal
+          onSubmitInquiry={handleAddInquiry}
+          onEnterSite={() => {
+            setIsRenewalActive(false);
+            sessionStorage.setItem('1mm_design_renewal_bypassed', 'true');
+          }}
+          onOpenAdmin={() => setIsAdminOpen(true)}
+        />
+        
+        {/* ADMIN CONTROL CENTER MODAL */}
+        <Admin
+          isOpen={isAdminOpen}
+          onClose={() => setIsAdminOpen(false)}
+          projects={projects}
+          inquiries={inquiries}
+          onAddProject={handleAddProject}
+          onUpdateProject={handleUpdateProject}
+          onDeleteProject={handleDeleteProject}
+          onReorderProjects={handleReorderProjects}
+          onUpdateInquiryStatus={handleUpdateInquiryStatus}
+          isAdminLoggedIn={isAdminLoggedIn}
+          setIsAdminLoggedIn={setIsAdminLoggedIn}
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="bg-[#0A0A0A] text-white min-h-screen font-sans selection:bg-white/10 selection:text-white">
       
@@ -267,7 +303,7 @@ export default function App() {
       <footer className="bg-[#0A0A0A] border-t border-[#1A1A1A] py-16 px-6 md:px-12 select-none">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8 text-white/40">
           <div className="space-y-3 text-left">
-            <span className="font-mono text-xs font-bold tracking-[0.25em] text-white">1MM DESIGN</span>
+            <span className="font-mono text-xs font-bold tracking-[0.25em] text-white">OneMillimeter</span>
             <p className="text-[10px] font-light max-w-sm font-sans leading-relaxed">
               One Millimeter Makes the Difference. 우리는 단순 시공을 넘어 최상의 브랜드 감동을 실물 공간으로 정밀 구축해 내는 하이엔드 경험 디자인 스튜디오입니다.
             </p>
@@ -277,12 +313,23 @@ export default function App() {
             <div className="space-y-1 text-left">
               <span>BUSINESS REGISTRATION: 120-11-15000</span>
               <br />
-              <span>REPRESENTATIVE ART DIRECTOR: 1MM PARTNERS</span>
+              <span>REPRESENTATIVE ART DIRECTOR: OneMillimeter PARTNERS</span>
             </div>
             <div className="space-y-1 text-left">
-              <span>COPYRIGHT © 2026 1MM DESIGN.</span>
+              <span>COPYRIGHT © 2026 OneMillimeter.</span>
               <br />
               <span>ALL RIGHTS RESERVED IN CHRONICLE.</span>
+              {!isRenewalActive && (
+                <button
+                  onClick={() => {
+                    setIsRenewalActive(true);
+                    sessionStorage.removeItem('1mm_design_renewal_bypassed');
+                  }}
+                  className="block mt-2 text-[8px] tracking-[0.2em] text-amber-500/50 hover:text-amber-500 transition-colors uppercase font-mono cursor-pointer"
+                >
+                  [ Activate Renewal Mode ]
+                </button>
+              )}
             </div>
           </div>
         </div>

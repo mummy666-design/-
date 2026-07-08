@@ -36,7 +36,7 @@ export default function About() {
               <div className="h-[1px] bg-[#1A1A1A] my-8" />
               
               <p className="text-base md:text-lg text-white/60 font-light leading-relaxed font-sans max-w-3xl">
-                1MM Design은 단순히 보기 좋게 마감된 인테리어 시공사가 아닙니다. 
+                OneMillimeter는 단순히 보기 좋게 마감된 인테리어 시공사가 아닙니다. 
                 우리는 brand 고유의 영혼과 물리적 물성, 고객 동선을 정밀하게 정렬하여 최상의 미학적이고 영속적인 브랜드 경험을 설계하는 <span className="text-white font-medium">Brand Experience Studio</span>입니다. 
                 <br /><br />
                 우리가 정의하는 1mm의 세밀한 가공 차이는 곧 고객이 전율을 느끼는 정서적 차이를 창출해 냅니다. 공간 설계의 모든 단계에 장인 정신과 최신 기술을 결합하여 가치 있는 역사를 기록해 갑니다.

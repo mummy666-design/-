@@ -44,7 +44,7 @@ export default function Navbar({ currentSection, onNavigate, onOpenAdmin, isAdmi
           className="group flex flex-col items-start tracking-[0.25em] font-mono text-white text-left focus:outline-none cursor-pointer"
         >
           <span className="text-lg font-bold tracking-[0.3em] transition-all duration-300 group-hover:text-white/80">
-            1MM DESIGN
+            OneMillimeter
           </span>
           <span className="text-[9px] text-white/40 tracking-[0.1em] font-sans">
             BRAND EXPERIENCE STUDIO

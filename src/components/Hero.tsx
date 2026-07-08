@@ -37,7 +37,7 @@ export default function Hero({ onScrollToProjects }: HeroProps) {
 
           {/* Main Title */}
           <h1 className="text-5xl md:text-8xl lg:text-9xl font-serif font-light tracking-tight text-white leading-[1.05]">
-            1MM DESIGN
+            OneMillimeter
           </h1>
 
           {/* Slogan */}

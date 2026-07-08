@@ -130,7 +130,7 @@ export default function Contact({ onSubmitInquiry }: ContactProps) {
                 <div className="w-3 h-3 bg-white rounded-full animate-ping absolute" />
                 <div className="w-3.5 h-3.5 bg-white rounded-full border-2 border-black z-20" />
                 <div className="mt-2 bg-[#0A0A0A] border border-[#1A1A1A] px-2 py-1 text-[8px] font-mono tracking-widest text-white whitespace-nowrap">
-                  1MM DESIGN STUDIO
+                  ONEMILLIMETER STUDIO
                 </div>
               </div>
 
@@ -250,7 +250,7 @@ export default function Contact({ onSubmitInquiry }: ContactProps) {
                       onChange={handleChange}
                       rows={5}
                       className="w-full bg-[#0A0A0A] border border-[#1A1A1A] rounded-none px-4 py-3 text-xs text-white placeholder-white/20 focus:outline-none focus:border-white transition-colors resize-none"
-                      placeholder="프로젝트 일정, 장소, 면적, 대략적인 컨셉 구상 등 1MM Design 파트너와 나누고 싶으신 세부 사양을 자유롭게 적어주십시오."
+                      placeholder="프로젝트 일정, 장소, 면적, 대략적인 컨셉 구상 등 OneMillimeter 파트너와 나누고 싶으신 세부 사양을 자유롭게 적어주십시오."
                       required
                     />
                   </div>
