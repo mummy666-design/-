@@ -139,31 +139,24 @@ export const INITIAL_PROJECTS: Project[] = [
     "title": "Shinsegae Library Lounge",
     "client": "Shinsegae Property",
     "year": "2026",
-    "category": "and",
+    "category": "Brand Experience",
     "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
     "summary": "도심 속 바쁜 일상에서 탈피해 고풍스러운 지성과 감각을 환기하는 공공 라운지입니다.\n압도적인 목조 서가 벽면 및 격자형 유리 천장 아래 가득 퍼지는 빛의 굴절.\n자연 친화적 플랜테리어 및 정제된 가구가 조화를 이루는 커뮤니티 거점.",
     "concept": "도시민을 위한 \"지적이고 평화로운 숲\"을 정의했습니다. 8미터 높이에 달하는 천연 목조 월넛 기둥 및 따뜻한 베이지 패브릭 소재가 거대한 스케일의 부담감을 지워내고 정서적인 편안함을 줍니다. 천장의 격자창을 통해 시간마다 다른 각도로 비쳐 들어오는 햇살은 공간의 생동감을 높여줍니다.",
     "designStory": "공공 상업 공간이면서도 개인의 고독 및 몰입을 동시에 지켜주는 레이아웃 구조가 핵심이었습니다. 가벽을 세우지 않는 대신, 높은 모듈 서가들을 부드러운 곡선 형태로 배치하여 자연스럽게 개인의 아늑한 서재 같은 독립적인 공간들을 레이어 형태로 포개어 놓았습니다.",
     "gallery": [
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80"
     ],
-    "area": "1,200㎡",
-    "period": "2025.04 - 2025.11",
-    "location": "Suwon, South Korea (Starfield)",
-    "scope": "Space Master Planning, Furniture Styling, Interior Design & Supervision",
+    "area": "350㎡",
+    "period": "2025.09 - 2026.02",
+    "location": "Seoul, South Korea (Gangnam)",
+    "scope": "Interior Design, Creative Direction, Styling & Construction",
     "keywords": [
-      "Commercial Space",
-      "Public Atrium",
-      "Lounge"
+      "Brand Experience",
+      "Retail",
+      "Library Lounge"
     ],
     "featured": false
   },
