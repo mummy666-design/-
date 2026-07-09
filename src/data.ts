@@ -26,6 +26,86 @@ export const UNSPLASH_POOL = {
 };
 
 export const INITIAL_PROJECTS: Project[] = [
+   {
+    "id": "proj_1783586144738",
+    "title": "Haagen-Dazs Stick Bar Offline Campaign",
+    "client": "Haagendazs",
+    "year": "2025",
+    "category": "Brand Experience",
+    "heroImage": "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585985/Untitled-1_0000_Layer_2_wc0ovp.jpg",
+    "summary": "-",
+    "concept": "-",
+    "designStory": "-",
+    "gallery": [
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585988/Untitled-1_0006_KakaoTalk_20250909_115908953_17_kfqm6f.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585986/Untitled-1_0003_KakaoTalk_20250909_115908953_10_crfram.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585985/Untitled-1_0001_KakaoTalk_20250909_115908953_22_urrqmj.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585986/Untitled-1_0002_KakaoTalk_20250909_115908953_16_nq2qkb.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585987/Untitled-1_0004_KakaoTalk_20250909_115908953_04_ab0ufv.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585987/Untitled-1_0005_KakaoTalk_20250909_115908953_01_ogdfht.jpg"
+    ],
+    "area": "250㎡",
+    "period": "3 Months",
+    "location": "Seoul, Korea",
+    "scope": "Interior Design, Space Branding",
+    "keywords": [
+      "Branding"
+    ],
+    "featured": false,
+    "videoUrl": "https://res.cloudinary.com/hvmnbjx1/video/upload/v1783586014/SaveInta.com_AQMVKqRoRvSW4altaMB5oIYiH0IhcPydBDXOaVpMRABRRWSBcaoIMg0pbVe4K72sGOwXEPe_XYbTw752Vsf-RhJlFgHvwzhjPdwWe3I_sxkmbv.mp4"
+  },
+  {
+    "id": "proj_1783585205479",
+    "title": "CES 2026 MS",
+    "client": "LG Electronics",
+    "year": "2026",
+    "category": "Exhibition",
+    "heroImage": "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585169/Untitled-1_0000_%EB%A9%94%EC%9D%B8%ED%8C%8C%EC%82%AC%EB%93%9C_copy_pnidev.jpg",
+    "summary": "-",
+    "concept": "-",
+    "designStory": "-",
+    "gallery": [
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585170/Untitled-1_0003_ss_5_copy_xspkqy.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585171/Untitled-1_0004_ss_4_copy_g1c0ei.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585170/Untitled-1_0002_ss_3_copy_xcmjjd.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783585169/Untitled-1_0001_xboom_copy_evyehy.jpg"
+    ],
+    "area": "250㎡",
+    "period": "3 Months",
+    "location": "Seoul, Korea",
+    "scope": "Interior Design, Space Branding",
+    "keywords": [
+      "Branding"
+    ],
+    "featured": false
+  },
+  {
+    "id": "proj_1783584844458",
+    "title": "CES 2026 MS",
+    "client": "LG Electronics",
+    "year": "2026",
+    "category": "Exhibition",
+    "heroImage": "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584702/ms1_0000_stage_copy_ttt6ay.jpg",
+    "summary": "-\n",
+    "concept": "-",
+    "designStory": "-",
+    "gallery": [
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584703/ms1_0007_%EB%A9%94%EC%9D%B8%EC%B8%A1%EB%A9%B4_sxagp4.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584702/ms1_0005_%EA%B0%A4%EB%9F%AC%EB%A6%AC%EB%B7%B0_jqstlb.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584702/ms1_0002_KakaoTalk_20260108_033126588_08_copy_lmiauz.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584703/ms1_0006_%EC%9E%85%EA%B5%AC_%EC%A2%8C%EC%B8%A1_qgmaio.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584702/ms1_0004_stage_2_copy_crl5c6.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783584702/ms1_0001_life_copy_eh81d5.jpg"
+    ],
+    "area": "250㎡",
+    "period": "3 Months",
+    "location": "Seoul, Korea",
+    "scope": "Interior Design, Space Branding",
+    "keywords": [
+      "Branding"
+    ],
+    "featured": false
+  },
   {
     "id": "the-whoo",
     "title": "ECCMID",
@@ -139,24 +219,31 @@ export const INITIAL_PROJECTS: Project[] = [
     "title": "Shinsegae Library Lounge",
     "client": "Shinsegae Property",
     "year": "2026",
-    "category": "Brand Experience",
+    "category": "and",
     "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
     "summary": "도심 속 바쁜 일상에서 탈피해 고풍스러운 지성과 감각을 환기하는 공공 라운지입니다.\n압도적인 목조 서가 벽면 및 격자형 유리 천장 아래 가득 퍼지는 빛의 굴절.\n자연 친화적 플랜테리어 및 정제된 가구가 조화를 이루는 커뮤니티 거점.",
     "concept": "도시민을 위한 \"지적이고 평화로운 숲\"을 정의했습니다. 8미터 높이에 달하는 천연 목조 월넛 기둥 및 따뜻한 베이지 패브릭 소재가 거대한 스케일의 부담감을 지워내고 정서적인 편안함을 줍니다. 천장의 격자창을 통해 시간마다 다른 각도로 비쳐 들어오는 햇살은 공간의 생동감을 높여줍니다.",
     "designStory": "공공 상업 공간이면서도 개인의 고독 및 몰입을 동시에 지켜주는 레이아웃 구조가 핵심이었습니다. 가벽을 세우지 않는 대신, 높은 모듈 서가들을 부드러운 곡선 형태로 배치하여 자연스럽게 개인의 아늑한 서재 같은 독립적인 공간들을 레이어 형태로 포개어 놓았습니다.",
     "gallery": [
       "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80"
+      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
     ],
-    "area": "350㎡",
-    "period": "2025.09 - 2026.02",
-    "location": "Seoul, South Korea (Gangnam)",
-    "scope": "Interior Design, Creative Direction, Styling & Construction",
+    "area": "1,200㎡",
+    "period": "2025.04 - 2025.11",
+    "location": "Suwon, South Korea (Starfield)",
+    "scope": "Space Master Planning, Furniture Styling, Interior Design & Supervision",
     "keywords": [
-      "Brand Experience",
-      "Retail",
-      "Library Lounge"
+      "Commercial Space",
+      "Public Atrium",
+      "Lounge"
     ],
     "featured": false
   },
