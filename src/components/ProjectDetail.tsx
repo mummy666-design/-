@@ -87,6 +87,61 @@ export default function ProjectDetail({ project, allProjects, onClose, onSelectP
           </div>
         </div>
 
+        {/* Video Section (if exists) */}
+        {project.videoUrl && (
+          <div className="pt-12 border-t border-[#1A1A1A]">
+            <div className="max-w-5xl mx-auto">
+              {(() => {
+                const url = project.videoUrl;
+                // YouTube 파싱
+                const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/);
+                if (ytMatch) {
+                  const videoId = ytMatch[1];
+                  return (
+                    <div className="relative w-full aspect-video overflow-hidden bg-[#121212] border border-[#1A1A1A]">
+                      <iframe
+                        src={`https://www.youtube.com/embed/${videoId}`}
+                        title="YouTube video player"
+                        className="absolute inset-0 w-full h-full border-0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  );
+                }
+
+                // Vimeo 파싱
+                const vimeoMatch = url.match(/(?:vimeo\.com\/|player\.vimeo\.com\/video\/)(\d+)/);
+                if (vimeoMatch) {
+                  const videoId = vimeoMatch[1];
+                  return (
+                    <div className="relative w-full aspect-video overflow-hidden bg-[#121212] border border-[#1A1A1A]">
+                      <iframe
+                        src={`https://player.vimeo.com/video/${videoId}`}
+                        title="Vimeo video player"
+                        className="absolute inset-0 w-full h-full border-0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  );
+                }
+
+                // 일반 비디오 (mp4 등)
+                return (
+                  <div className="relative w-full aspect-video overflow-hidden bg-[#121212] border border-[#1A1A1A]">
+                    <video
+                      src={url}
+                      controls
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                );
+              })()}
+            </div>
+          </div>
+        )}
+
         {/* Other Projects Preview Section (Replaces close button) */}
         <div className="pt-20 border-t border-[#1A1A1A] space-y-8">
           <div className="flex justify-between items-baseline">

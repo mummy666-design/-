@@ -43,7 +43,17 @@ export default function App() {
     const savedProjects = localStorage.getItem('1mm_design_projects');
     if (savedProjects) {
       try {
-        setProjects(JSON.parse(savedProjects));
+        const parsed = JSON.parse(savedProjects) as Project[];
+        const migrated = parsed.map(p => {
+          if (p.category === ('Commercial Space' as any)) {
+            return { ...p, category: 'and' as const };
+          }
+          return p;
+        });
+        setProjects(migrated);
+        if (JSON.stringify(parsed) !== JSON.stringify(migrated)) {
+          localStorage.setItem('1mm_design_projects', JSON.stringify(migrated));
+        }
       } catch (e) {
         setProjects(INITIAL_PROJECTS);
       }

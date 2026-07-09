@@ -16,6 +16,7 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
     { id: 'ALL', label: 'ALL PROJECTS', desc: '전체 프로젝트' },
     { id: 'Exhibition', label: 'EXHIBITION', desc: '전시공간', image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80' },
     { id: 'Brand Experience', label: 'BRAND EXPERIENCE', desc: '브랜드 경험', image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80' },
+    { id: 'and', label: 'and', desc: '기타 및 협업', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80' },
   ];
 
   const filteredProjects = activeCategory === 'ALL'

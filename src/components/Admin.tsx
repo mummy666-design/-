@@ -123,7 +123,8 @@ export default function Admin({
     location: '',
     scope: '',
     keywords: ['Branding'],
-    featured: false
+    featured: false,
+    videoUrl: ''
   });
 
   const [galleryInput, setGalleryInput] = useState('');
@@ -163,7 +164,8 @@ export default function Admin({
       location: proj.location,
       scope: proj.scope,
       keywords: proj.keywords,
-      featured: proj.featured
+      featured: proj.featured,
+      videoUrl: proj.videoUrl || ''
     });
     setGalleryInput(proj.gallery.join('\n'));
   };
@@ -193,7 +195,8 @@ export default function Admin({
       location: '',
       scope: '',
       keywords: ['Branding'],
-      featured: false
+      featured: false,
+      videoUrl: ''
     });
     setGalleryInput([
       UNSPLASH_POOL.details[0],
@@ -229,7 +232,8 @@ export default function Admin({
       location: formState.location || 'Seoul, Korea',
       scope: formState.scope || 'Interior Design, Space Branding',
       keywords: formState.keywords,
-      featured: formState.featured
+      featured: formState.featured,
+      videoUrl: formState.videoUrl || ''
     };
 
     if (editingProject) {
@@ -285,7 +289,7 @@ export default function Admin({
             <div className="text-center space-y-2">
               <h3 className="text-lg font-serif font-light text-white">관리자 인증</h3>
               <p className="text-xs text-white/40 font-sans leading-relaxed">
-                포트폴리오 아카이브 수정 및 견적 문의 조회를 위해 지정 비밀번호(1115)를 입력해 주십시오.
+                포트폴리오 아카이브 수정 및 견적 문의 조회를 위해 관리자 비밀번호를 입력해 주십시오.
               </p>
             </div>
 
@@ -548,6 +552,7 @@ export default function Admin({
                           >
                             <option value="Exhibition">Exhibition (전시공간)</option>
                             <option value="Brand Experience">Brand Experience (브랜드 경험)</option>
+                            <option value="and">and (기타/협업)</option>
                           </select>
                         </div>
                         <div className="space-y-1">
@@ -798,6 +803,18 @@ export default function Admin({
                             </div>
                           </div>
                         )}
+                      </div>
+
+                      {/* Video URL Input */}
+                      <div className="space-y-1">
+                        <label className="text-[9px] font-mono tracking-widest text-white/40 block">영상 URL (Video URL - YouTube, Vimeo, MP4 등)</label>
+                        <input
+                          type="text"
+                          value={formState.videoUrl || ''}
+                          onChange={(e) => setFormState(prev => ({ ...prev, videoUrl: e.target.value }))}
+                          className="w-full bg-black border border-white/15 px-3 py-2 text-xs text-white focus:outline-none focus:border-white"
+                          placeholder="e.g. https://www.youtube.com/watch?v=... 또는 직접 연결 비디오 링크"
+                        />
                       </div>
 
                       {/* Action buttons */}

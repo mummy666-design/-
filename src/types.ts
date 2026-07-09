@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   client: string;
   year: string;
-  category: 'Exhibition' | 'Brand Experience';
+  category: 'Exhibition' | 'Brand Experience' | 'Commercial Space' | 'and';
   heroImage: string;
   summary: string; // 3 lines
   concept: string; // 5-10 lines
@@ -15,6 +15,7 @@ export interface Project {
   scope: string; // 참여범위 (e.g., "Space Design, Brand Strategy, Construction")
   keywords: string[]; // Exhibition / Retail / Branding etc
   featured: boolean;
+  videoUrl?: string;
 }
 
 export interface ProcessStep {

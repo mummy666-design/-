@@ -139,7 +139,7 @@ export const INITIAL_PROJECTS: Project[] = [
     "title": "Shinsegae Library Lounge",
     "client": "Shinsegae Property",
     "year": "2026",
-    "category": "Commercial Space",
+    "category": "and",
     "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
     "summary": "도심 속 바쁜 일상에서 탈피해 고풍스러운 지성과 감각을 환기하는 공공 라운지입니다.\n압도적인 목조 서가 벽면 및 격자형 유리 천장 아래 가득 퍼지는 빛의 굴절.\n자연 친화적 플랜테리어 및 정제된 가구가 조화를 이루는 커뮤니티 거점.",
     "concept": "도시민을 위한 \"지적이고 평화로운 숲\"을 정의했습니다. 8미터 높이에 달하는 천연 목조 월넛 기둥 및 따뜻한 베이지 패브릭 소재가 거대한 스케일의 부담감을 지워내고 정서적인 편안함을 줍니다. 천장의 격자창을 통해 시간마다 다른 각도로 비쳐 들어오는 햇살은 공간의 생동감을 높여줍니다.",
