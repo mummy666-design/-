@@ -26,7 +26,7 @@ export const UNSPLASH_POOL = {
 };
 
 export const INITIAL_PROJECTS: Project[] = [
-   {
+    {
     "id": "proj_1783586144738",
     "title": "Haagen-Dazs Stick Bar Offline Campaign",
     "client": "Haagendazs",
@@ -107,6 +107,60 @@ export const INITIAL_PROJECTS: Project[] = [
     "featured": false
   },
   {
+    "id": "kcc",
+    "title": "글로벌 6K for Water",
+    "client": "worldvision",
+    "year": "2023",
+    "category": "Brand Experience",
+    "heroImage": "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783666318/Untitled-1_0004_KakaoTalk_20230911_115810348_22_n9tpqk.jpg",
+    "summary": "-",
+    "concept": "-",
+    "designStory": "-",
+    "gallery": [
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783666319/Untitled-1_0003_KakaoTalk_20230911_115810348_01_g4b2eu.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783666318/Untitled-1_0002_KakaoTalk_20230911_115810348_03_mw8u5j.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783666317/Untitled-1_0001_KakaoTalk_20230911_115810348_09_zsjs3m.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783666318/Untitled-1_0000_KakaoTalk_20230911_115810348_14_mijwic.jpg"
+    ],
+    "area": "400㎡",
+    "period": "2025.07 - 2025.12",
+    "location": "Ilsan, South Korea (KINTEX)",
+    "scope": "Concept Curation, Exhibition Identity, Spatial Architecture & Design",
+    "keywords": [
+      "Brand Experience",
+      "Exhibition",
+      "Material Art"
+    ],
+    "featured": false,
+    "videoUrl": ""
+  },
+  {
+    "id": "shinsegae-property",
+    "title": "CES 2025 LG Display",
+    "client": "LG Display",
+    "year": "2024",
+    "category": "Exhibition",
+    "heroImage": "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783667242/Untitled-1_0000_KakaoTalk_20240117_161836325_07_shk2g5.jpg",
+    "summary": "-",
+    "concept": "-",
+    "designStory": "-",
+    "gallery": [
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783667242/Untitled-1_0001_Layer_2_a3upuo.jpg",
+      "https://res.cloudinary.com/hvmnbjx1/image/upload/v1783667242/Untitled-1_0002_Layer_1_yig6bi.jpg"
+    ],
+    "area": "1,200㎡",
+    "period": "2025.04 - 2025.11",
+    "location": "Suwon, South Korea (Starfield)",
+    "scope": "Space Master Planning, Furniture Styling, Interior Design & Supervision",
+    "keywords": [
+      "Commercial Space",
+      "Public Atrium",
+      "Lounge"
+    ],
+    "featured": false,
+    "videoUrl": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/K71rOi-Oxq8?si=b8DkNm6aRirHTyu7\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+  },
+  {
     "id": "the-whoo",
     "title": "ECCMID",
     "client": "Seegene",
@@ -180,72 +234,6 @@ export const INITIAL_PROJECTS: Project[] = [
       "Branding"
     ],
     "featured": true
-  },
-  {
-    "id": "kcc",
-    "title": "KCC Materials Pavilion",
-    "client": "KCC Corporation",
-    "year": "2026",
-    "category": "Brand Experience",
-    "heroImage": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80",
-    "summary": "친환경 건축자재가 가진 날것 그대로의 물성과 기하학적 중첩을 경험하는 파빌리온입니다.\n자연에서 추출한 광물 및 원료가 아름다운 공간적 예술로 승화하는 순간.\n소재의 무게감 및 촉각적 레이어링을 극대화한 독창적인 동선 구성.",
-    "concept": "보통 감추어지는 천장 단열재, 석고 보드, 유리 원자재 등 KCC의 핵심 원자재들을 전면으로 시각화했습니다. 흙, 돌, 유리가 지닌 본질적인 힘을 드러내어, 화려한 가식 대신 굳건한 신뢰감 및 영속성을 표현하고자 공간의 모든 벽을 기하학적 석재 슬래브 및 가공되지 않은 콘크리트로 채웠습니다.",
-    "designStory": "우리는 자재 창고의 거친 레이아웃에서 조각적인 아름다움을 포착해 냈습니다. 불규칙하게 배치된 건축용 단열재 단면들이 자연광 및 만났을 때 생기는 따뜻하고 원초적인 패턴을 찾아내어, 관람객이 마치 거대한 현대 조각품 속을 걷는 듯한 차분하고 깊이 있는 명상적 동선을 완성했습니다.",
-    "gallery": [
-      "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "area": "400㎡",
-    "period": "2025.07 - 2025.12",
-    "location": "Ilsan, South Korea (KINTEX)",
-    "scope": "Concept Curation, Exhibition Identity, Spatial Architecture & Design",
-    "keywords": [
-      "Brand Experience",
-      "Exhibition",
-      "Material Art"
-    ],
-    "featured": false
-  },
-  {
-    "id": "shinsegae-property",
-    "title": "Shinsegae Library Lounge",
-    "client": "Shinsegae Property",
-    "year": "2026",
-    "category": "and",
-    "heroImage": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80",
-    "summary": "도심 속 바쁜 일상에서 탈피해 고풍스러운 지성과 감각을 환기하는 공공 라운지입니다.\n압도적인 목조 서가 벽면 및 격자형 유리 천장 아래 가득 퍼지는 빛의 굴절.\n자연 친화적 플랜테리어 및 정제된 가구가 조화를 이루는 커뮤니티 거점.",
-    "concept": "도시민을 위한 \"지적이고 평화로운 숲\"을 정의했습니다. 8미터 높이에 달하는 천연 목조 월넛 기둥 및 따뜻한 베이지 패브릭 소재가 거대한 스케일의 부담감을 지워내고 정서적인 편안함을 줍니다. 천장의 격자창을 통해 시간마다 다른 각도로 비쳐 들어오는 햇살은 공간의 생동감을 높여줍니다.",
-    "designStory": "공공 상업 공간이면서도 개인의 고독 및 몰입을 동시에 지켜주는 레이아웃 구조가 핵심이었습니다. 가벽을 세우지 않는 대신, 높은 모듈 서가들을 부드러운 곡선 형태로 배치하여 자연스럽게 개인의 아늑한 서재 같은 독립적인 공간들을 레이어 형태로 포개어 놓았습니다.",
-    "gallery": [
-      "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
-    ],
-    "area": "1,200㎡",
-    "period": "2025.04 - 2025.11",
-    "location": "Suwon, South Korea (Starfield)",
-    "scope": "Space Master Planning, Furniture Styling, Interior Design & Supervision",
-    "keywords": [
-      "Commercial Space",
-      "Public Atrium",
-      "Lounge"
-    ],
-    "featured": false
   },
   {
     "id": "haagen-dazs",

@@ -19,16 +19,20 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
     { id: 'and', label: 'and', desc: '기타 및 협업', image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80' },
   ];
 
+  const [showAll, setShowAll] = React.useState(false);
+
   const filteredProjects = activeCategory === 'ALL'
     ? projects
     : projects.filter(p => p.category === activeCategory);
+
+  const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);
 
   return (
     <section id="projects" className="py-24 md:py-36 bg-[#0A0A0A] text-white px-6 md:px-12 select-none">
       <div className="max-w-7xl mx-auto">
         
         {/* PORTFOLIO GRID */}
-
+ 
         {/* SECTION 3: FEATURED PROJECTS (PORTFOLIO GRID) */}
         <div id="portfolio-grid" className="pt-12 space-y-12">
           {/* Portfolio Header with Category Filters */}
@@ -41,13 +45,16 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
                 Featured Projects
               </h2>
             </div>
- 
+  
             {/* Filter Pills */}
             <div className="flex flex-wrap gap-2">
               {categories.map((cat) => (
                 <button
                   key={cat.id}
-                  onClick={() => setActiveCategory(cat.id)}
+                  onClick={() => {
+                    setActiveCategory(cat.id);
+                    setShowAll(false); // Reset collapse when category changes
+                  }}
                   className={`px-4 py-2 font-mono text-[10px] tracking-widest transition-all duration-300 cursor-pointer ${
                     activeCategory === cat.id
                       ? 'bg-white text-black font-semibold'
@@ -59,11 +66,11 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
               ))}
             </div>
           </div>
-
+ 
           {/* Photos speak first - beautiful high-end list of project cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <AnimatePresence mode="popLayout">
-              {filteredProjects.map((project, idx) => (
+              {displayedProjects.map((project, idx) => (
                 <motion.div
                   layout
                   key={project.id}
@@ -92,7 +99,7 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
                         </div>
                       </div>
                     </div>
-
+ 
                     {/* Metadata & Description */}
                     <div className="space-y-3 pt-2">
                       <div className="flex justify-between items-center text-[10px] tracking-widest font-mono text-white/40">
@@ -105,7 +112,7 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
                         </h3>
                         <ArrowRight className="w-4 h-4 transform -rotate-45 group-hover:rotate-0 group-hover:translate-x-1 transition-all duration-300 text-white/30 group-hover:text-white" />
                       </div>
-
+ 
                       {/* Brief description summaries */}
                       <p className="text-xs text-white/50 leading-relaxed font-sans line-clamp-2 pt-1 border-t border-[#1A1A1A]">
                         {project.summary.split('\n')[0]}
@@ -116,7 +123,19 @@ export default function Projects({ projects, onSelectProject, activeCategory, se
               ))}
             </AnimatePresence>
           </div>
-
+ 
+          {/* View More / View Less Toggle Button */}
+          {filteredProjects.length > 6 && (
+            <div className="flex justify-center pt-8">
+              <button
+                onClick={() => setShowAll(!showAll)}
+                className="px-6 py-3 border border-white/10 text-white/60 hover:text-white hover:border-white text-[10px] font-mono tracking-widest uppercase transition-all duration-300 cursor-pointer"
+              >
+                {showAll ? 'SHOW LESS' : `VIEW ALL PROJECTS (${filteredProjects.length})`}
+              </button>
+            </div>
+          )}
+ 
           {filteredProjects.length === 0 && (
             <div className="text-center py-24 border border-dashed border-[#1A1A1A]">
               <span className="font-mono text-xs text-white/40 tracking-wider">
